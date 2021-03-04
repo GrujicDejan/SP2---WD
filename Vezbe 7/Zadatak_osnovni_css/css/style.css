@@ -1,0 +1,58 @@
+body {
+	text-align: center;
+}
+
+#links a {
+	display: inline-block;
+	overflow: hidden;
+	width: 50px;
+	height: 50px;
+	transition: all 0.5s;
+}
+
+#links a img {
+	object-fit: fill;
+	height: 50px;
+}
+
+.container {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	width: 80vw;
+	height: calc(100vh - 100px);
+	background-color: rgb(240,240,240);
+	margin: 10px;
+}
+
+.container img {
+	height: 100%;
+	position: relative;
+	transition: all 1s;
+}
+
+.container .buttons {
+	position: absolute;
+	bottom: 10px;
+	left: 0px;
+	right: 0px;
+	text-align: center;
+}
+
+.container .buttons button {
+	width: 25px;
+	height: 25px;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+
+.container .buttons button:hover {
+	background-color: rgba(0, 0, 0, 1);
+}
+
+.selected {
+	transform: scale(1.5);
+}
