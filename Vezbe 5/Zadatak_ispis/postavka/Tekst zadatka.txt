@@ -1,0 +1,19 @@
+Potrebno je napraviti web sajt koji prikazuje zanimljive činjenice korisniku (fun facts).
+Klikom na dugme "Show another fun fact!" korisniku je potrebno prikazati tekst koji
+predstavlja fun fact. Nakon što korisnik ponovo klikne na to dugme, prikazuje mu se naredni
+fun fact, i tako sve dok ima fun fact-ova. Kada ih ponestane, korisniku se prikazuje prozor
+u kom dobija obaveštenje da je fun fact-ova ponestalo. Klikom na dugme "Reset" sajt se
+resetuje, te se fun fact-ovi prikazuju ispočetka.
+
+Koraci pri implementaciji:
+- Dodati event-ove na dugmad "Show another fun fact!" i "Reset".
+- Event handler koji je dodeljen dugmetu "Show another fun fact!" treba u HTML elementu koji
+  ima id "fun-fact" da prikaže sledeći po redu fun fact. Fun fact-ovi se nalaze u nizu
+  funFacts i to u boliku base64 encode-ovanog stringa. Da bi na osnovu base64 encode-ovanog
+  stringa dobili originalni string, potrebno je pozvati JavaScript funkciju koja se zove
+  atob. Ta funkcija prima base64 encode-ovan string i vraća originalni string, u ovom slučaju
+  tekst fun fact-a. Ukoliko je korisnik kliknuo na ovo dugme, a fun fact-ova više nema, tada
+  mu je potrebno prikazati prozor sa odgovarajućom porukom.
+- Event koji je dodeljen dugmetu "Reset" treba da resetuje sajt tako da prvi sledeći put kada
+  korisnik klikne na dugme "Show another fun fact!" prikazaće mu se prvi po redu fun fact.
+  Pored toga, ova funkcija treba da ispiše u konzolu da je reset uspešno odrađen.
