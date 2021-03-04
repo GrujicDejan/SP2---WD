@@ -1,0 +1,71 @@
+/* Unutar ovog zadatka predstavlja se relativno pozicioniranje. Referentni pravougaonik ovog pozicioniranja
+je content samog elementa koji se pozicionira. Posto ovaj nacin pozicioniranja ne vadi element iz flow-a,
+mozete primetiti da se elementi oko pozicioniranog elementa ponasaju kao da je on i dalje na starom mestu.
+Da biste ovo videli, mozete da sklonite relativno pozicioniranje, zapamtite gde su okolni elementi bili,
+i onda vratite relativno pozicioniranje, i uverite se da se okolni elementi nisu pomerili. */
+
+/* Selektuju se svi div elementi. */
+div {
+	background-color: rgb(230,230,230); /* Postavljanje pozadinske boje. */
+	margin-top: 30px; /* Gornja margina ce biti siroka 30 piksela. */
+	padding-top: 20px; /* Gornji padding ce biti sirok 20 piksela. */
+	height: 100px; /* Visina elementa ce biti 100 piksela. */
+}
+
+/* Selektuju se svi span elementi. */
+span {
+	background-color: yellow; /* Postavljanje pozadinske boje na zutu. */
+	padding: 10px; /* Postavljanje gornjeg, desnog, donjeg i levog paddinga na 10 piksela. */
+	margin: 8px; /* Postavljanje gornje, desne, donje i leve margine na 8 piksela. */
+}
+
+/* Selektuje se element koji ima id "prvi". */
+#prvi {
+	background-color: red; /* Postavljanje pozadinske boje na crvenu. */
+	position: relative; /* Postavljamo relativno pozicioniranje. */
+	left: 50px; /* Ovaj element ce od leve ivice referentnog pravougaonika da se pomeri za 50 piksela udesno. */
+	z-index: 1; /* U slucaju preklapanja sa drugim elementima, ovaj element ce biti ispred svih elemenata koji
+				   imaju z-index manji od 1, a ispod svih elemenata koji imaju z-index veci od 1. */
+}
+
+/* Selektuje se element koji ima id "drugi". */
+#drugi {
+	background-color: blue; /* Postavljanje pozadinske boje na plavu. */
+	color: white; /* Postavljanje boje slova na belu. */
+	position: relative; /* Postavljamo relativno pozicioniranje. */
+	right: 50px; /* Ovaj element ce od desne ivice referentnog pravougaonika da se pomeri za 50 piksela ulevo. */
+	z-index: 1; /* U slucaju preklapanja sa drugim elementima, ovaj element ce biti ispred svih elemenata koji
+				   imaju z-index manji od 1, a ispod svih elemenata koji imaju z-index veci od 1. */
+}
+
+/* Selektuje se element koji ima id "treci". */
+#treci {
+	background-color: green; /* Postavljanje pozadinske boje na zelenu. */
+	color: white; /* Postavljanje boje slova na belu. */
+	position: relative; /* Postavljamo relativno pozicioniranje. */
+	bottom: 50px; /* Ovaj element ce od donje ivice referentnog pravougaonika da se pomeri za 50 piksela nagore. */
+	z-index: 1; /* U slucaju preklapanja sa drugim elementima, ovaj element ce biti ispred svih elemenata koji
+				   imaju z-index manji od 1, a ispod svih elemenata koji imaju z-index veci od 1. */
+}
+
+/* Selektuje se element koji ima id "cetvrti". */
+#cetvrti {
+	background-color: silver; /* Postavljanje pozadinske boje na sivkastu boju. */
+	position: relative; /* Postavljamo relativno pozicioniranje. */
+	top: 50px; /* Ovaj element ce od gornje ivice referentnog pravougaonika da se pomeri za 50 piksela nadole. */
+	z-index: 1; /* U slucaju preklapanja sa drugim elementima, ovaj element ce biti ispred svih elemenata koji
+				   imaju z-index manji od 1, a ispod svih elemenata koji imaju z-index veci od 1. */
+}
+
+/* Selektuje se element koji ima id "peti". */
+#peti {
+	background-color: purple; /* Postavljanje pozadinske boje na ljubicastu. */
+	color: white; /* Postavljanje boje slova na belu. */
+	position: relative; /* Postavljamo relativno pozicioniranje. */
+	top: 50px; /* Uz ovo podesavanje i podesavanje ispod, element ce da se pomeri od gornje ivice nadole za 50
+				  piksela, i od desne ivice nalevo takodje za 50 piksela. Sto znaci prakticno da ce ovaj element
+				  otici dole-levo. */
+	right: 50px;
+	z-index: 1; /* U slucaju preklapanja sa drugim elementima, ovaj element ce biti ispred svih elemenata koji
+				   imaju z-index manji od 1, a ispod svih elemenata koji imaju z-index veci od 1. */
+}
