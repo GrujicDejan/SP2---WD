@@ -1,0 +1,22 @@
+Potrebno je implementirati sajt u kom korisnik popunjava formu koja se potom
+validira JavaScript-om. Naime, nakon što se forma submit-uje, želimo da proverimo
+da je korisnik sve uneo kako treba i ako nije, da mu prikažemo poruku o grešci.
+
+Koraci pri implementaciji:
+- Potrebno je napraviti nekoliko manjih funkcija čija je svrha da provere određene
+  aspekte korisničkog unosa. Svaka od ovih funkcija treba da vrati true ukoliko
+  su korisnički podaci ispravno uneti, a false u suprotnom. Funkcije koje treba
+  napraviti su:
+    - proveriIme - Proverava da li korisničko ime ima između 6 i 10 karaktera.
+    - proveriJednakostSifri - Proverava da li su dve unete šifre jednake.
+    - proveriValidnostSifre - Proverava da li je šifra validna. Šifra je validna
+      ako sadrži bar jedno veliko slovo, bar jedno malo slovo i bar jedan broj.  
+- Potrebno je takođe napraviti funkciju "provera" koja vraća true ukoliko svaka
+  od prethodno implementiranih funkcija vraća true, a vraća false u suprotnom.
+  Ukoliko neki korisnički unos nije validan, potrebno je korisniku prikazati
+  odgovarajuću poruku o grešci pozivom funckije alert (npr. ako korisnik nije
+  dobro uneo korisničko ime prikazati grešku "Uneto korisničko ime nije ispravno."
+- Prethodno implementirana funkcija "provera" treba da se pozove kada korisnik
+  submituje formu. Ukoliko neki unos nije bio validan, korisnik ostaje na
+  tekućoj stranici da ispravi svoj unos, a ukoliko je bio validan, korisniku se
+  prikazuje stranica success.html.
