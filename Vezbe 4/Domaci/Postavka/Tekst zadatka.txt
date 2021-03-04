@@ -1,0 +1,5 @@
+Nadograditi zadatak od prošlog časa tako da HTML-ovi izgledaju onako kako je prikazano na priloženim slikama. Ispod se nalaze stavke koje se ne vide sa slika, a koje takođe treba odraditi:
+	- iFrame u kom se nalazi w3schools link (i u kom se otvara link za Wikipediu) ne treba da se pomera pri skrolovanju.
+	- Kada se širina prozora smanji stavke iz navigacije treba da ostanu u jednom redu.
+	- Kada se sadržaj skroluje, zaglavlje sajta (naslov i navigacija) treba da bude iznad skrolovanog sadržaja.
+	- Minimalna širina svakog pojedinačnog dugmeta iz navigacije je 100 piksela.
