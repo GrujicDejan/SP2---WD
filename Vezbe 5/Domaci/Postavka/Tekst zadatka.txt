@@ -1,0 +1,9 @@
+Potrebno je napraviti web sajt koji izgleda kao na slikama "postavka1.png", "postavka2.png" i "postavka3.png".
+Za svrhu zadatka potrebno je napraviti novi JavaScript fajl i u njemu implementirati sledece.
+Kada se sajt otvori potrebno je dodati 5 (moze i vise) kvadrata u div id-a "toSelect".
+Nakon toga, kada korisnik klikne na neki kvadrat, on promeni boju, sto se realizuje dodavanjem CSS klase "selected" na kliknuti kvadrat. Klasa "selected" onda boji kvadrat na odgovarajuci nacin.
+Pritiskom na dugme "move" svi obojeni kvadrati se pomeraju u donji kontejner.
+
+Takodje, potrebno je implementirati i reset dugme, koje vraca sve na inicijalno stanje.
+
+index.html i css/style.css nije potrebno menjati!
