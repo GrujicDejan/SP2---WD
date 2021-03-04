@@ -1,0 +1,13 @@
+Potrebno je implementirati animaciju kvadrata koji se odbija o unutrasnje ivice prozora pretrazivaca.
+
+Kvadrat pocinje u gornjem-levom uglu i krece se u oba pravca istovremeno (kako gore-dole, tako levo-desno). Prilikom
+dodira sa nekom ivicom, kvadrat menja smer kretanja (ako udari u desnu ivicu, promeni smer kretanja u levo). Takodje,
+prilikom dodira on promeni boju. Boje kroz koji kvadrat prolazi se nalaze u index.js fajlu i kada se promeni poslednja
+boja, krece se ponovo od pocetka.
+
+Potrebno je dopuniti sledece funkcije:
+	- updatePosition() - funkcija koja pomeri kvadrat u jednom "frejmu" animacije. Ocita trenutnu poziciju kvadata,
+						 pomeri ga, i u slucaju dodira mu menja pravac kretanja i boju.
+
+	- resFunc() - funkcija koja reaguje na promenu dimenzija prozora pretrazivaca i azurira globalne promenljive
+	  			  koje opisuju maksimalnu sirinu i visinu kretanja unutar prozora.
