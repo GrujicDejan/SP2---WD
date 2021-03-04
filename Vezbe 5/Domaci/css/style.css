@@ -1,0 +1,28 @@
+#toSelect, #moved {
+	text-align: center;
+	min-height: 150px;
+	margin-bottom: 10px;
+}
+
+#toSelect {
+	border: 2px solid black;
+}
+
+#moved {
+	border: 2px solid green;
+}
+
+.square {
+    height: 100px;
+    width: 100px;
+    color: chocolate;
+    background-color: black;
+    display: inline-block;
+    margin: 5px;
+    padding: 20px;
+    text-align: center;
+}
+
+.selected {
+    background-color: green;
+}
