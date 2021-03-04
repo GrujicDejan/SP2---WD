@@ -1,0 +1,12 @@
+Implementirati animaciju padanja kiše. Kapi kiše treba da se nalaze u
+okviru kontejnera sa id-em "raindrops". Svaka kap kiše je novi img
+element koji za src atribut ima vrednost "images/raindrop.png". Za početak
+implementirati padanje jedne kapi kiše. Na samom početku, horizontalna
+pozicija te kapi treba da bude sredina ekrana, a vertikalna pozicija
+kapi treba da bude takva da se ona nalazi iznad vidljivog dela ekrana,
+a koliko tačno iznad treba odlučiti na random način. Nakon inicijalizacije
+kap kreće da pada ka dole. Kada stigne do donje ivice ekrana, kap opet
+dobija svoju inicijalnu poziciju onako kako je već opisano.
+
+Nakon što realizujete ovu animaciju za jednu kap, potrebno je realizovati
+isto to za proizvoljan broj kapi kiše.
