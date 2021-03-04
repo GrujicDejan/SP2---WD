@@ -1,0 +1,109 @@
+/* Unutar ovog zadatka predstavljeno je apsolutno pozicioniranje. Za apsolutno pozicioniranje vazi da je
+referentni pravougaonik jednak content-u prvog pretka (preci nekog HTML elementa su svi oni elementi u kojima
+se dati element nalazi - recimo, u index.html fajlu iz zadatka za relativno pozicioniranje, prvi predak span elementa
+koji ima id "prvi" je div, a drugi predak je body). Ovo pozicioniranje vadi element iz flow-a, tako da se
+ostali elementi ponasaju kao da apsolutno-pozicionirani element ne postoji. */
+
+/* Selektuje element koji ima id "prvi". */
+#prvi {
+	background-color: blue; /* Postavlja se pozadinska boja na plavu. */
+	position: absolute; /* Postavlja se apsolutno pozicioniranje. Referentni pravougaonik ovog pozicioniranja
+						   bice cela html stranica, jer element koji ima id "prvi" nema pretka koji nije
+						   staticki pozicioniran. */
+	top: 0px; /* Element ce biti udaljen 0 piksela od gornje ivice html elementa. */
+	left: 0px; /* Element ce biti udaljen 0 piksela od leve ivice html elementa, sto zajedno sa podesavanjem
+				   iznad znaci da ce ovaj element biti u gornjem levom cosku html elementa. */
+	width: 100px; /* Sirina ovog elementa bice 100 piksela. */
+	height: 100px; /* Visina ovog elementa bice 100 piksela. */
+}
+
+/* Selektuje element koji ima id "drugi". */
+#drugi {
+	background-color: purple; /* Postavlja se pozadinska boja na ljubicastu. */
+	position: absolute; /* Postavlja se apsolutno pozicioniranje. Referentni pravougaonik ovog pozicioniranja
+						   bice cela html stranica, jer element koji ima id "prvi" nema pretka koji nije
+						   staticki pozicioniran. */
+	top: 0px; /* Element ce biti udaljen 0 piksela od gornje ivice html elementa. */
+	right: 0px; /* Element ce biti udaljen 0 piksela od desne ivice html elementa, sto zajedno sa podesavanjem
+				   iznad znaci da ce ovaj element biti u gornjem desnom cosku html elementa. */
+	width: 100px; /* Sirina ovog elementa bice 100 piksela. */
+	height: 100px; /* Visina ovog elementa bice 100 piksela. */
+}
+
+/* Selektuje element koji ima id "treci". */
+#treci {
+	background-color: black; /* Postavlja se pozadinska boja na crnu. */
+	position: absolute; /* Postavlja se apsolutno pozicioniranje. Referentni pravougaonik ovog pozicioniranja
+						   bice cela html stranica, jer element koji ima id "prvi" nema pretka koji nije
+						   staticki pozicioniran. */
+	bottom: 0px; /* Element ce biti udaljen 0 piksela od donje ivice html elementa. */
+	left: 0px; /* Element ce biti udaljen 0 piksela od leve ivice html elementa, sto zajedno sa podesavanjem
+				   iznad znaci da ce ovaj element biti u donjem levom cosku html elementa. */
+	width: 100px; /* Sirina ovog elementa bice 100 piksela. */
+	height: 100px; /* Visina ovog elementa bice 100 piksela. */
+}
+
+/* Selektuje element koji ima id "cetvrti". */
+#cetvrti {
+	background-color: red; /* Postavlja se pozadinska boja na crvenu. */
+	position: absolute; /* Postavlja se apsolutno pozicioniranje. Referentni pravougaonik ovog pozicioniranja
+						   bice cela html stranica, jer element koji ima id "prvi" nema pretka koji nije
+						   staticki pozicioniran. */
+	bottom: 0px; /* Element ce biti udaljen 0 piksela od donje ivice html elementa. */
+	right: 0px; /* Element ce biti udaljen 0 piksela od desne ivice html elementa, sto zajedno sa podesavanjem
+				   iznad znaci da ce ovaj element biti u donjem desnom cosku html elementa. */
+	width: 100px; /* Sirina ovog elementa bice 100 piksela. */
+	height: 100px; /* Visina ovog elementa bice 100 piksela. */
+}
+
+/* Selektuje element koji ima id "ugnjezdenost". */
+#ugnjezdenost {
+	background-color: green; /* Postavlja se pozadinska boja na zelenu. */
+	position: relative; /* Ovde se postavlja relativno pozicioniranje, ali ne da bi se ovaj element pomerio,
+						   (probajte da sklonite ovo relativno pozicioniranje, i videcete da ovaj zeleni
+						   elment ostaje tamo gde je i bio). Razlog zasto onda stavljamo relativno pozicioniranje
+						   jeste taj sto div element koji se nalazi unutar ovog elementa treba da postavimo u
+						   donji desni ugao ovog elementa. Posto ugnjezdeni div treba da se pozicionira u odnosu
+						   na ovaj element, a ne u odnosu na ceo html element, onda ovaj element ne sme biti
+						   staticki pozicioniran. I zbog toga, da ne bi bio staticki pozicioniran, menjamo
+						   mu pozicioniranje na relativno, koje zapravo nista vizuelno ne menja, a time smo
+						   zadovoljili neophodni uslov da se unutrasnji div pozicionira u odnosu na ovaj element. */
+	width: 100px; /* Sirina ovog elementa bice 100 piksela. */
+	height: 100px; /* Visina ovog elementa bice 100 piksela. */
+}
+
+/* Selektuje sve div elemente koji se nalaze unutar elementa koji ima id "ugnjezdenost". */
+#ugnjezdenost div {
+	background-color: silver; /* Postavlja se pozadinska boja na sivu. */
+	position: absolute; /* Postavlja se apsolutno pozicioniranje. Referentni pravougaonik ovog pozicioniranja
+						   bice element id-a "ugnjezdenost", jer je to prvi predak koji nije staticki pozicioniran. */
+	bottom: 5px; /* Element ce biti udaljen 5 piksela nagore od donje ivice elementa "ugnezdenost". */
+	right: 5px; /* Element ce biti udaljen 5 piksela ulevo od desne ivice elementa "ugnjezdenost". Ovo, zajedno
+				   sa podesavanjem iznad ce znaciti da je element postavljen u donjem desnom cosku elementa
+				   sa id-em "ugnezdenost". */
+	width: 20px; /* Sirina ovog elementa bice 20 piksela. */
+	height: 20px; /* Visina ovog elementa bice 20 piksela. */
+}
+
+/* Selektuje element koji ima id "centriran". */
+#centriran {
+	background-color: yellow; /* Postavlja se pozadinska boja na zutu. */
+	position: absolute; /* Postavlja se apsolutno pozicioniranje. Referentni pravougaonik ovog pozicioniranja
+						   bice cela html stranica, jer element koji ima id "prvi" nema pretka koji nije
+						   staticki pozicioniran. */
+	left: 0px; /* Element ce biti udaljen 0 piksela od leve ivice html elementa. */
+	right: 0px; /* Element ce biti udaljen 0 piksela od desne ivice html elementa, sto zajedno sa podesavanjem
+				   iznad znaci da bi ovaj element trebalo da bude rasprostranjen preko cele sirine html elementa.
+				   Medjutim ovo nece biti slucaj zbog podesavanja ispod. */
+	width: 100px; /* Sirina ovog elementa treba da bude 100 piksela, sto je u konfliktu sa onim sto smo podesili
+					 iznad. Naime, ako se zbog "left: 0px; right: 0px" element treba rasprostrinjati preko cele
+					 sirine html elementa, kako onda da width ujedno bude 100px? Problem se resava marginom.
+					 Pogledajte ispod. */
+	height: 100px; /* Visina ovog elementa bice 100 piksela. */
+	margin: auto; /* Margina auto ce da uradi sledece. Element ce zaista i biti 100 piksela, kako je navedeno,
+					 a onda ce se neophodan prostor da bi se zadovoljilo i "left: 0px; right: 0px" popuniti
+					 marginom. Podesavanje "margin: auto" onda dodaje jednake margine i sa leve i sa desne
+					 strane, tako da se zadovolji uslov da element ide do leve i desne ivice html elementa.
+					 Kada se sa obe strane stavi jednaka margina, zapravo se postize efekat centriranja. 
+					 Ovaj trik se cesto koristi kada treba nesto centrirati. */
+}
