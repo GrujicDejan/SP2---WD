@@ -1,0 +1,78 @@
+/*
+Boje se mogu definisati na vise nacina:
+- navodjenjem predifenisanog imena boje - Azure
+- heksadecimalni broj - #F0FFFF
+- Kao RGB ili RGBA vrednost - rgb(240, 255, 255), rgba(0, 0, 255, 0.3)
+rgba(red, green, blue, alpha) alpha definise providnost vrednosti 0-1
+
+
+Vise boja naci na:
+https://www.w3schools.com/colors/colors_picker.asp
+
+Font-family
+- generičke familije - grupa sličnih familija fontova npr. Serif - sa kukicama ("Times New Roman"), Sans-serif - bez kukica (Arial), Monospace (Courier)
+- font family - specijalna font familija npr. Times New Roman, Arial
+
+Ako ime fonta ima vise reci moraju biti unutar navodnika "Times New Roman".
+
+Vise o fontovima naci na:
+https://www.w3schools.com/css/css_font.asp
+
+*/
+body {
+	background-color: rgb(47,133,123);
+	/* prvo se trazi Arial, ako nema onda Helvetica, inace bilokoji font iz sans-serif familije*/
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+	background-color: white;
+	/* sirina tabele 100% ekrana
+	
+	Vise o dimenzijama pogledati na:
+	https://www.w3schools.com/css/css_dimension.asp
+	*/
+	width: 100%;
+	/*  tekst je poravnat centralno 
+	
+	Vise o poravnanju teksta pogledati na:
+	https://www.w3schools.com/css/css_text_align.asp
+	*/
+	text-align: center;
+}
+
+/*  tabela, naslovi u tabeli, i celije tabele imaju okvir debeo 1px pun i crne boje
+
+kad se pise skracena verzija osobina okvira prvo se navodi sirina, stil, pa boja.
+
+Vise o okvirima pogledati na:
+https://www.w3schools.com/css/css_border.asp
+*/
+table, th, td {
+   border: 1px solid black;
+}
+
+/* elementi  klase klasa1 imaju sliku pozadina.jpg u pozadini koja se ponavlja i visine 300px
+
+Vise o pozadinama pogledati na:
+https://www.w3schools.com/css/css_background.asp
+*/
+.klasa1 {
+	background-image: url(images/pozadina.jpg);
+	background-repeat: repeat;
+	height: 300px;
+}
+/* paragraf elementi koji se nalaze unutar klase klasa1 imaju font bele boje, sa pozadinom boje crne boje koja je providna 30% i time sivkasta postaje, i okvirom debljine 10px pun sive boje*/
+.klasa1 p {
+	color: white;
+	background-color: rgba(0, 0, 0, 0.7);
+	border: 10px solid gray;
+}
+
+.klasa2 table {
+	background-color: yellow;
+}
+
+.klasa2 p {
+	text-align: justify;
+}
