@@ -1,0 +1,39 @@
+Kad se stranica učitava postavlja se na datum max vrednost na današnji dan (datum mora biti prosleđen u obliku yyyy+'-'+mm+'-'+dd). 
+
+Pre submita forme mora se proveriti sledeće:
+- proveriti da li je bar jedna titula odabrana
+- proveriti da li je uneto ime i prezime 
+- proveriti da li ime i prezime imaju zajedno bar 6 karaktera 
+- proveriti da li ime i prezime sadrži samo slova, razmake i "-"
+- proveriti da li ime počinje velikim slovom
+- proveriti da li unos sadrži i ime i prezime
+- proveriti da li prezime počinje velikim slovom
+- proveriti da li nakon "-" ide veliko slovo
+- proveriti da li je datum odabran (datum ne sme ostati prazan)
+- proveriti da li JMBG ima tačno 13 karaktera
+- proveriti da li JMBG sadrži samo cifre
+- proveriti da li je godina unutar JMBG-a dobro uneta
+- proveriti da li je mesec unutar JMBG-a dobro unet
+- proveriti da li je za mesec unutar JMBG-a unet ispravan broj dana (recimo, 31. april ne postoji)
+- proveriti da li se pol u JMBG-u podudara sa odabranom titulom
+
+Dodatna funkcija:
+- funkcija koja resetuje formu na početne vrednosti
+
+String substring
+https://www.w3schools.com/jsref/jsref_substring.asp
+
+String trim
+https://www.w3schools.com/jsref/jsref_trim_string.asp
+
+String indexOf
+https://www.w3schools.com/jsref/jsref_indexof.asp
+
+JavaScript For Loop
+https://www.w3schools.com/js/js_loop_for.asp
+
+JavaScript parseInt
+https://www.w3schools.com/jsref/jsref_parseint.asp
+
+JMBG
+https://noizz.rs/nauka/jmbg-formula-svaka-cifra-u-maticnom-broju-krije-informaciju-o-vama/6leq8sf
