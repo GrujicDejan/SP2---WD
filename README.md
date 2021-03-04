@@ -33,4 +33,5 @@ Napraviti web sajt koji je obogaćen JavaScript-om. Projekat treba da ima slede�
 
 * Animacija realizovana menjanjem CSS-a. Animacija mora da sadrži originalni kod i da bude drugačija od one koja je data na vežbama. 
 
-Kurs je obrađen 2020. godine.
+
+Kurs je obradjen u skolskoj 2019/20. godini.
