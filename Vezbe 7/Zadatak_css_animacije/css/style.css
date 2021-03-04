@@ -1,0 +1,15 @@
+#raindrops {
+	position: absolute;
+	pointer-events: none;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	height: 100%;
+	z-index: 1;
+	overflow: hidden;
+}
+
+#raindrops img {
+	position: absolute;
+	width: 40px;
+}
