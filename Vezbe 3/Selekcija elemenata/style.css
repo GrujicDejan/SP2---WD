@@ -1,0 +1,72 @@
+/*
+
+Boje se mogu definisati na vise nacina:
+- navodjenjem predifenisanog imena boje - Azure
+- heksadecimalni broj - #F0FFFF
+- Kao RGB ili RGBA vrednost - rgb(240, 255, 255), rgba(0, 0, 255, 0.3)
+rgba(red, green, blue, alpha) alpha definise providnost vrednosti 0-1
+
+
+Vise boja naci na:
+https://www.w3schools.com/colors/colors_picker.asp
+*/
+/* div elementi imaju pozadinu ljubicaste boje  */
+div {
+	/* ljubicasta boja pozadine */
+	background-color: rgb(133,45,181);
+}
+/* span elementi imaju pozadinu tirkizne boje  */
+span {
+	/* Tirkizna boja pozadine */
+	background-color: rgb(28,217,207);
+}
+/* elementi klase prva-klasa imaju slova bele boje  */
+.prva-klasa {
+	/* Bela boja slova */
+	color: rgb(255,255,255);
+}
+/* elementi klase druga-klasa imaju slova zute boje  */
+.druga-klasa {
+	/* Zuta boja slova */
+	color: rgb(241,223,3);
+}
+/* elementi sa id-om PrviDiv imaju pun okvir crne boje  */
+#PrviDiv {
+	/* Crni border */
+	border: solid;
+	border-color: black;
+}
+/* div elementi klase druga-klasa imaju pun okvir tirkizne boje  */
+div.druga-klasa {
+	/* Tirkizni border */
+	border: solid;
+	border-color: rgb(28,217,207);
+}
+/* span elementi unutar div elementa imaju pun okvir bele boje  */
+div span {
+	/* Beli border */
+	border: solid;
+	border-color: rgb(255,255,255);
+}
+/* div elementi i span elementi imaju podvucen tekst  */
+div, span {
+	/* Podvuceni tekst */
+	text-decoration: underline;
+}
+/* prelaskom misa preko diva boja pozadine postaje tirkizna*/ 
+div:hover {
+	/* Tirkizna boja pozadine */
+	background-color: rgb(28,217,207);
+}
+/* prelaskom misa preko spana boja pozadine postaje ljubicasta*/ 
+span:hover {
+	/* ljubicasta boja pozadine */
+	background-color: rgb(133,45,181);
+}
+/* svim elementima je velicina fonta 1.1em
+   16px=1em 
+   Vise pogledati na https://www.w3schools.com/css/css_font_size.asp
+   */
+* {
+	font-size: 1.1em;
+}
