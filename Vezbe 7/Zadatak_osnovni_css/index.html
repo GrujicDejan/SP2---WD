@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Galerija</title>
+	<script src="js/script.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body onload="initialize()"> <!-- Nakon sto se stranica skroz ucitala, poziva se funkcija initialize. -->
+	<div class="container">
+		<img src="" id="slika">
+		<div class="buttons">
+			<button onclick="moveLeft()"><</button> <!-- Na klik ovog dugmeta izvrsava se funkcija moveLeft. -->
+			<button onclick="zoomOut()">-</button> <!-- Na klik ovog dugmeta izvrsava se funkcija zoomOut. -->
+			<button onclick="zoomIn()">+</button> <!-- Na klik ovog dugmeta izvrsava se funkcija zoomIn. -->
+			<button onclick="moveRight()">></button> <!-- Na klik ovog dugmeta izvrsava se funkcija moveRight. -->
+		</div>
+	</div>
+	<div id="links">
+		<a href="images/pattern1.png"></a>
+		<a href="images/pattern2.png"></a>
+		<a href="images/pattern3.png"></a>
+	</div>
+</body>
+</html>
