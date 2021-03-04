@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forme</title>
+</head>
+
+<body>
+
+	<!-- 
+		Jedan od bitnijih delova Web stranica su formulari (eng. form). Oni predstavljaju 
+		skup polja preko kojih moze da se prikuplja unos (input) od korisnika.
+
+		Korisnicki unos podrazumeva:
+			- unos teksta/brojeva
+			- odabir elemenata iz neke liste
+			- "stikliranje" nekih polja i sl.
+
+		Forme se okruzuju <form> ... </form> tag-ovima.
+
+		Polja za unos <input> se nalaze izmedju <form> tag-ova. Tip unosa se odredjuje 
+		pomocu atributa "type", koji moze da ima vise razlitih vrednosti:
+			- text - polje sluzi za unos teksta
+			- number - polje za unos broja
+			- radio - selekcija gde je moguce odabrati samo 1 element
+			- submit - dugme za podnosenje formulara, tj. potvrdu unosa
+
+		Radio input-i trebaju da imaju istu vrednost "name" atributa kako bi vazilo 
+		pravilo da samo 1 opcija moze da bude obelezena. Time sto imaju isto ime, znamo
+		da potpadaju pod istu grupu opcija.
+
+		Atributom "checked" (koji ne ocekuje parametar) se oznacava koja opcija 
+		ce u pocetku (kada se html dokument prvobitno ucita) biti obelezena.
+
+		Vise o formama:
+			https://www.w3schools.com/html/html_forms.asp
+	 -->
+
+	<form>
+		Ime i prezime:
+		<input type="text" > <br><br>
+		Godina rodjenja:
+		<input type="number" size="4"> <br><br>
+		Pol: <br>
+		<input type="radio" name="pol" checked> Zenski<br>
+		<input type="radio" name="pol" > Muski <br><br>
+		<input type="submit" value="Posalji">
+	</form>
+</body>
+
+</html>

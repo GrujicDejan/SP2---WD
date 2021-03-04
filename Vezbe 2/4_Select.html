@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forme</title>
+</head>
+
+<body>
+	<form>
+		<fieldset>
+			<legend>Osnovni podaci</legend>
+			Ime i prezime:
+			<input type="text" name="ime_prezime"> <br><br>
+			Godina rodjenja:
+			<input type="text" size="4" name="godina_rodjenja"> <br><br>
+		</fieldset>
+		<br>
+		<fieldset>
+			<legend>Licni podaci</legend>
+			Pol: <br>
+			<input type="radio" name="pol" value="z" checked> Zenski<br>
+			<input type="radio" name="pol" value="m"> Muski <br><br>
+
+			<!-- 
+				Dodajmo na prethodnu formu mogucnost odabira strucne spreme. 
+				Listu opcija mozemo da predstavimo u vidu padajuceg menija koji se 
+				definise pomocu <select> tag-a. Imenujemo ga atributom "name".
+
+				Moguci izbori se definisu tag-ovima <option> ... </option>, a izmedju
+				njih ide tekst koji ce se korisniku prikazati u padajucem meniju.
+
+				Svi izbori se navode izmedju <select> ... </select> tag-ova.
+
+				Atributi kod prvog izbora <option> su sledeci:
+					- selected - opcija koja je automatski obelezena po otvaranju stranice
+					- disabled - opcija koju korisnik ne moze sam da odabere
+			 -->
+
+			<select name="strucna_sprema">
+				<option selected disabled>Strucna sprema</option>
+				<option>Osnovna skola</option>
+				<option>Srednja skola</option>
+				<option>Visa skola</option>
+				<option>Visoka strucna sprema</option>
+				<option>Specijalista</option>
+				<option>Magistratura</option>
+				<option>Doktorat</option>
+			</select>
+		</fieldset>
+		<br>
+		<input type="submit" value="Posalji">
+	</form>
+</body>
+
+</html>

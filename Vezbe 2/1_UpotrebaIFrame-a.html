@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Frame-ovi</title>
+</head>
+
+<body>
+
+	<!-- 
+		Tag <iframe> predstavlja "okvir" u koji moze da se smesti neki drugi HTML dokument.
+
+		Na taj nacin mozemo u nas HTML dokument da umetnemo neki drugi, kako lokalni, tako
+		i sa neke druge adrese.
+
+		<iframe> ima vec poznate atribute, "src", "width" i "height". "src" isto funkcionise
+		kao i kod <img> tag-a. Prosledi mu se putanja do dokumenta koji treba da prikaze, u 
+		primeru ispod to je Web Sajt w3schools.
+	 -->
+
+	<h2>Sajt Wikipedia</h2>
+	<iframe src="https://www.wikipedia.org/" width="100%" height="300"></iframe>
+	
+	<!-- 
+		Moguce je menjati sadrzaj koji se prikazuje unutar iframe-a. U primeru ispod,
+		<iframe> ima atribut "name". Pomocu njega smo okvir imenovali kao "drugi_iframe".
+
+		U <a> tagovima smo na taj nacin preko "target" atributa definisali gde zelimo da 
+		nam se prikaze sadrzaj linka nakon klika na isti. U ovom slucaju to je nas "drugi_iframe".
+
+		Na ovaj nacin omogucili smo korisniku da "lista" ponudjene HTML dokumente.
+	 -->
+
+	<h2>Navigacija</h2>
+	<a href="_Frame1.html" target="drugi_iframe">1</a>
+	<a href="_Frame2.html" target="drugi_iframe">2</a>
+	<a href="_Frame3.html" target="drugi_iframe">3</a>
+	<a href="_Frame4.html" target="drugi_iframe">4</a>
+	<a href="_Frame5.html" target="drugi_iframe">5</a>
+	<iframe src="_Frame1.html" width="100%" height="300px" name="drugi_iframe"></iframe>
+
+	<!-- 
+
+		Vise o <iframe> tag-u:
+			https://www.w3schools.com/html/html_iframe.asp
+			https://www.w3schools.com/tags/tag_iframe.asp
+	
+	 -->
+</body>
+
+</html>

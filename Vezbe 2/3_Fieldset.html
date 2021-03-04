@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forme</title>
+</head>
+
+<body>
+
+	<!-- 
+		Moguce je podeliti formu u logicki povezane celine pomocu tag-a <fieldset>.
+		Taj tag predstavlja podskup polja za unos neke forme. Jedina funkcija mu je
+		da ih vizuelno odvoji od ostalih okvirom.
+
+		Moguce je dodati i neki vid "naslova" za podskup polja tag-om <legend>
+
+		Primer u ovom dokumentu predstavlja istu formu kao u prethodnom fajlu,
+		samo lepse rasporedjenu upotrebom <fieldset> tag-a.
+
+		Vise o:
+			- fieldset - https://www.w3schools.com/tags/tag_fieldset.asp
+			- legend - https://www.w3schools.com/tags/tag_legend.asp
+	 -->
+
+	<form>
+		<fieldset>
+			<legend>Osnovni podaci</legend>
+			Ime i prezime:
+			<input type="text" name="ime_prezime"> <br><br>
+			Godina rodjenja:
+			<input type="number" name="godina_rodjenja"> <br><br>
+		</fieldset>
+		<br>
+		<fieldset>
+			<legend>Licni podaci</legend>
+			Pol: <br>
+			<input type="radio" name="pol" value="z" checked> Zenski<br>
+			<input type="radio" name="pol" value="m"> Muski
+		</fieldset>
+		<br>
+		<input type="submit" value="Posalji">
+	</form>
+</body>
+
+</html>

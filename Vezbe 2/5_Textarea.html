@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forme</title>
+</head>
+
+<body>
+	<form>
+		<fieldset>
+			<legend>Osnovni podaci</legend>
+			Ime i prezime:
+			<input type="text" name="ime_prezime"> <br><br>
+			Godina rodjenja:
+			<input type="text" size="4" name="godina_rodjenja"> <br><br>
+		</fieldset>
+		<br>
+		<fieldset>
+			<legend>Licni podaci</legend>
+			Pol: <br>
+			<input type="radio" name="pol" value="z" checked> Zenski<br>
+			<input type="radio" name="pol" value="m"> Muski <br><br>
+			Strucna sprema: 
+			<select name="strucna_sprema">
+				<option>Osnovna skola</option>
+				<option selected>Srednja skola</option>
+				<option>Visa skola</option>
+				<option>Visoka strucna sprema</option>
+				<option>Specijalista</option>
+				<option>Magistratura</option>
+				<option>Doktorat</option>
+			</select>
+		</fieldset>
+		<br><br>
+		<fieldset>
+
+			<!-- 
+				Prosirimo formu sa jos jednom sekcijom. U njoj ce se nalaziti polje za unos
+				testa <textarea>. Novina koju <textarea> unosi je mogucnost da primi neogranicen
+				broj karaktera i tekst ce se prelomiti u novi red po potrebi.
+
+				Dakle, <textarea> treba koristiti ukoliko ocekujemo da ce korisnik uneti neki
+				duzi tekst.
+
+				Atributi:
+					- rows - koliko redova ce polje za unos biti visoko
+					- cols - koliko kolona ce polje za unos biti siroko. Jedna kolona odgovara jednom karakteru.
+			 -->
+
+			<legend>Komentari</legend>
+			<textarea name="komentari" rows="10" cols="100">Neki sadrzaj</textarea>
+		</fieldset>
+		<br><br>
+		<input type="submit" value="Posalji">
+	</form>
+</body>
+
+</html>

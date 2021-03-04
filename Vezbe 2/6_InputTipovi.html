@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forme</title>
+</head>
+
+<body>
+
+	<!-- 
+		Postoji mnogo razlicitih nacina na koje se moze dobiti input
+		od korisnika. Nacin inputa se odredjuje u <input> tag-u tako
+		sto se prosledi odgovarajuci argument u "type" atribut.
+
+		Neki od tih tipova su:
+			- password - svi karakteri teksta unetog od strane korisnika
+						 se zamene zvezdicom "*"
+			- checkbox - kvadratic koji je moguce "stiklirati"
+			- button - predstavlja dugme unutar forme
+			- number - unosi se broj (moguce je definisati minimalnu
+					   i maksimalnu vrednost koja se moze uneti)
+			- date - odabir datuma
+			- time - odabir vremena
+			- color - odabir boje
+			- range - "slajder" kojim se bira vrednost u nekom dometu.
+					  Definisu se minimalna i maksimalna vrednost 
+					  dometa.
+
+		Pored ovih postoje i drugi tipovi input-a, oni se mogu videti 
+		na sledecem linku:
+			https://www.w3schools.com/html/html_form_input_types.asp
+
+	 -->
+
+	<form>
+		<p>type="password" <input type="password"></p>
+		<p>type="checkbox" <input type="checkbox"></p>
+		<p>type="button" <input type="button" value="Dugme"></p>
+		<p>type="number" <input type="number" max="5"></p>
+		<p>type="date" <input type="date"></p>
+		<p>type="time" <input type="time"></p>
+		<p>type="color" <input type="color" name="color" value="#ff0000"></p>
+		<p>type="range" <input type="range" min="0" max="10" list="tickmarks" data-show-value="true"></p>
+	</form>
+</body>
+
+</html>
