@@ -1,0 +1,28 @@
+/* Unutar ovog zadatka predstavljeno je fiksno pozicioniranje. Referentni pravougaonik fiksnog pozicioniranja
+je prozor browsera. Kako prozor browsera uvek stoji na jednom mestu, fiksno pozicioniranje ima sledecu posledicu:
+na elemente koji su fiksno pozicionirani ne utice skrol. Kod fiksnog pozicioniranja se element vadi iz flow-a,
+tako da se ostali elementi ponasaju kao da fiksno-pozicionirani element i ne postoji. */
+
+/* Selektuju se svi elementi klase "klasa1". */
+.klasa1 {
+	background-color: yellow; /* Postavljanje pozadinske boje na zutu. */
+	position: fixed; /* Postavljanje fiksnog pozicioniranja. */
+	top: 0px; /* Element ce od gornje ivice browser-a biti udaljen 0 piksela. */
+	left: 0px; /* Element ce od leve ivice browser-a biti udaljen 0 piksela. */
+	right: 0px; /* Element ce od desne ivice browser-a biti udaljen 0 piksela. Zajedno sa podesavanjem iznad,
+				   rezultat ce biti da se element prositre celom sirinom browser-a. */
+	height: 100px; /* Visina elementa ce biti 100 piksela. */
+	z-index: 1;  /* Zbog z-indeksa koji ima vrednost 1, ovaj element ce biti iznad elementa koji ima klasu
+					"klasa2", jer u klasi 2 nije podesen z-index, a ako nije podesen, ostaje mu defolt 0. */
+}
+
+/* Selektuju se svi elementi klase "klasa2". */
+.klasa2 {
+	background-color: red; /* Postavljanje pozadinske boje na crvenu. */
+	position: fixed; /* Postavljanje fiksnog pozicioniranja. */
+	top: 0px; /* Element ce od gornje ivice browser-a biti udaljen 0 piksela. */
+	bottom: 0px; /* Element ce od donje ivice browser-a biti udaljen 0 piksela. Zajedno sa podesavanjem iznad,
+				    rezultat ce biti da se element prositre celom visinom browser-a. */
+	right: 0px; /* Element ce od desne ivice biti udaljen 0 piksela. */
+	width: 100px; /* Sirina elementa ce biti 100 piksela. */
+}
