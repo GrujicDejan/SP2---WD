@@ -1,0 +1,15 @@
+Potrebno je napraviti web sajt u kom će korisnik klikom na dugme napraviti novi kvadrat,
+a klikom na kvadrat korisnik će taj dati kvadrat obrisati. Svaki kvadrat na sebi treba
+da ima redni broj.
+
+Koraci pri implementaciji:
+- Na event koji se okida nakon što je cela stranica učitana zakačiti funkciju inicijalizuj.
+- Implementirati funkciju inicijalizuj, tako da ona u globalnu promenljivu kontejner
+  stavlja element koji ima id "container".
+- Klikom na dugme "Dodaj kvadrat" treba da se okine funkcija dodajKvadrat. Implementirati to.
+- Funkciju dodajKvadrat implementirati tako da se kreira novi div element koji ima klasu
+  "kvadrat" i koji za tekst ima redni broj (prvi kreirani kvadrat imaće redni broj 1, drugi
+  će imati redni broj 2, itd). Nakon toga, novokreirani div treba da se doda u kontejner.
+  Pored toga, na onclick event ovog div-a potrebno je zakačiti funkciju obrisiKvadrat.
+- Implementirati funkciju obrisiKvadrat tako da se njenim izvršavanjem obriše element koji
+  ju je pozvao.
