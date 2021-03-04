@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Unos podataka</title>
+	<meta charset="UTF-8">
+	<script src="js/script.js"></script>
+	<style>
+		.form-group {
+			margin: 12px 0px;
+		}
+
+		form label {
+			font-weight: bold;
+		}
+	</style>
+</head>
+
+<body onload="initialize()">
+	<h2>Unos podataka</h2>
+	<form name="forma" action="Zahvalnica.html" onsubmit="return provera()">
+		<fieldset>
+			<legend>Podaci o korisniku</legend>
+			<div class="form-group">
+				<label style="display:inline-block;margin-bottom:10px">Titula</label>
+				<div><input type="radio" name="titula" value="gdin"> Gospodin</div>
+				<div><input type="radio" name="titula" value="gdja"> Gospođa</div>
+				<div><input type="radio" name="titula" value="gdjica"> Gospođica</div>
+			</div>
+			<div class="form-group">
+				<label>Ime i prezime:</label>
+				<input type="text" placeholder="Unesite ime i prezime" id="imeprezime" size="40">
+			</div>
+			<div class="form-group">
+				<label>Datum rođenja:</label>
+				<input type="date" placeholder="dd.mm.gggg." id="datumrodjenja"  min="1899-01-01" max="2000-01-01">
+			</div>
+			<div class="form-group">
+				<label>JMBG:</label>
+				<input type="text" placeholder="Unesite JMBG" id="jmbg" size="13">
+			</div>
+		</fieldset>
+		<div>
+			<input type="submit" value="Pošalji podatke">
+			<input type="reset" onclick="resetFunc()" value="Poništi popunjavanje forme">
+		</div>
+	</form>
+</body>
+</html>
