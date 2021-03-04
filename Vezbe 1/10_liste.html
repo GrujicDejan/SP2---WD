@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Liste</title>
+</head>
+<body>
+
+	<!-- 
+		Cesto je korisno predstavljati podatke u vidu listi. U HTML-u moguce
+		je to raditi na vise nacina.
+
+		Sve liste u ovom primeru se nalaze u svom paragrafu.
+
+		Prvi paragraf ima atribut id. Tim atributom nekom HTML elementu dajemo
+		jedinstveni identifikator, pomocu kojeg kasnije mozemo da referenciramo
+		taj element.
+
+		Prvi tip liste je Unordered List <ul>. Sluzi za nabrajanje elemenata kojima
+		nije bitan redosled. Elementi se obelezavaju <li> tag-ovima.
+	 -->
+	
+	<p id="vrh">
+		Unordered lista:
+		<ul>
+			<li>Stavka 1</li>
+			<li>Stavka 2</li>
+			<li>Stavka 3</li>
+		</ul>
+	</p>
+	
+	<!-- 
+		Naredni tip je Ordered List <ol>. Ovde je bitan redosled elemenata
+	 -->
+
+	<p>
+		Ordered lista:
+		<ol>
+			<li>Stavka 1</li>
+			<li>Stavka 2</li>
+			<li>Stavka 3</li>
+		</ol>
+	</p>
+
+	<!-- 
+		Redosled ne mora biti oznacen brojevima. Uz pomoc "type" atributa
+		moze biti oznacen velikim slovima...
+	 -->
+	
+	<p>
+		Ordered lista - type A:
+		<ol type="A">
+			<li>Stavka 1</li>
+			<li>Stavka 2</li>
+			<li>Stavka 3</li>
+		</ol>
+	</p>
+	
+	<!-- 
+		... ali i malim.
+	 -->
+
+	<p>
+		Ordered lista - type a:
+		<ol type="a">
+			<li>Stavka 1</li>
+			<li>Stavka 2</li>
+			<li>Stavka 3</li>
+		</ol>
+	</p>
+	
+	<!-- 
+		Takodje i rimskim brojevima, velikim i malim.
+	 -->
+
+	<p>
+		Ordered lista - type I:
+		<ol type="I">
+			<li>Stavka 1</li>
+			<li>Stavka 2</li>
+			<li>Stavka 3</li>
+		</ol>
+	</p>
+	
+	<p>
+		Ordered lista - type i:
+		<ol type="i">
+			<li>Stavka 1</li>
+			<li>Stavka 2</li>
+			<li>Stavka 3</li>
+		</ol>
+	</p>
+
+	<!-- 
+		Deskriptivne list <dl> (Description List) su liste gde mozemo da navodimo proizvoljne termine.
+
+		Pomocu <dt> se definise termin (Describe Term), dok sa <dd> se taj termin opisuje. 
+
+		Vise o listama:
+			https://www.w3schools.com/html/html_lists.asp
+
+	 -->
+	
+	<p>
+		Description lista:
+		<dl>
+		   <dt>Prvi termin</dt>
+		   <dd>Opis prvog termina</dd>
+		   <dt>Drugi termin</dt>
+		   <dd>Opis drugog termina</dd>
+		</dl>
+	</p>
+
+	<!-- 
+		Receno je da pomocu id vrednosti nekog elementa mozemo kasnije da mu pristupamo.
+
+		Tako je moguce pomocu <a> tag-a da link-ujemo ka nekom postojecem elementu na istoj stranici.
+		Na taj nacin ovde postizemo mogucnost brzog povratka na vrh stranice.
+	 -->
+	<a href="#vrh">Povratak na početak</a>
+</body>
+</html>

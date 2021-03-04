@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tabele</title>
+</head>
+<body>
+
+	<!-- 
+		Moguce je definisati i tabele pomocu <table> tag-a.
+
+		Tabele se sastoje od vrsta <tr> (table row).
+
+		Kolone mogu da imaju naslove, oni se oznacavaju sa
+		<th> (table header) tag-om, a mogu i da imaju obicne
+		vrednosti <td> (table data).
+	 -->
+
+	<table border="1">
+		<tr>		
+			<th></th>
+			<th>Student 1</th>
+			<th>Student 2</th>
+		</tr>
+		<tr>
+			<td>Predmet 1</td>
+			<td>10</td>
+			<td>7</td>
+		</tr>
+		<tr>
+			<td>Predmet 2</td>
+			<td>8</td>
+			<td>6</td>
+		</tr>
+	</table>
+	
+	<br><br>
+
+	<!-- 
+		Atributi colspan i rowspan definisu nad koliko kolona i vrsta
+		data celija treba da se prostire.
+
+		Dakle, ako je colspan="2", jedna celija ce se prostirati nad 2 kolone.
+		Tako <th> sa tekstom Studenti se prostire nad kolonama 3 i 4.
+
+		Vise o tabelama:
+			https://www.w3schools.com/html/html_tables.asp
+	 -->
+	
+	<table border="1">
+		<tr>		
+			<th colspan="2" rowspan="2"></th>
+			<th colspan="2">Studenti</th>
+		</tr>
+		<tr>		
+			<th>Student 1</th>
+			<th>Student 2</th>
+		</tr>
+		<tr>
+			<th rowspan="2">Predmeti</th>
+			<th>Predmet 1</th>
+			<td>10</td>
+			<td>7</td>
+		</tr>
+		<tr>
+			<th>Predmet 2</th>
+			<td>8</td>
+			<td>6</td>
+		</tr>
+	</table>
+</body>
+</html>
