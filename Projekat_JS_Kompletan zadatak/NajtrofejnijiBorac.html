@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Turniri</title>
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<script src="js/script.js"></script>
+	
+	<style type="text/css">
+		img{
+			width: 100%;
+			height: 500px;
+		}
+		
+		 #slideShowBox{
+		 	width: 50%;
+		 	height: 500px;
+		 	margin: 20px auto;
+		 	position: relative;
+			float: right;
+			margin-top: 0;
+		 }
+		 
+		 button{
+			cursor: pointer;
+		 	border: none;
+		 	background: rgba(0,0,0,0.0);
+		 	position: absolute;
+		 	top: 0%;
+			width: 50%;
+			height: 100%;
+		 }
+		 
+		 button:hover {
+			background-color: rgba(137,98,117,0.1);
+		 }
+		
+		.sled{
+        	margin-left: 50%;
+        }
+
+	</style>
+	
+</head>
+
+<body id="body-pozadina">
+	
+	<header>
+		<div class="navigacija">
+			<h1>Judo</h1>
+			<a href="Pocetna.html"><div>Početna strana</div></a>
+			<a href="Uvod.html"><div>Uvod</div></a>
+			<a href="Istorija.html"><div>Istorija džuda</div></a>
+			<a href="SrpskiJudo.html"><div>Srpski džudo</div></a>
+			<a href="Turniri.html"><div>Turniri</div></a>
+			<a href="NajtrofejnijiBorac.html"><div>Najtrofejniji borac</div></a>
+			<a href="NagradnaIgra.html"><div>Nagradna igra</div></a>
+			<input style="position: absolute; bottom: calc(0% + 30px); width: 100%; height: 30px;" type="button" onclick="darkMode()" value="Dark Mode">
+			<input style="position: absolute; bottom: 0; width: 100%; height: 30px;" type="button" onclick="normallMode()" value="Normal Mode">
+		</div>
+	</header>
+	
+	
+	
+	<div id="pozadina" class="body-content">
+	
+		<div class="cover">
+		
+			<u><h1>Najtrofejniji džudista</h1></u>
+		
+		</div>
+		
+		
+		<img src="Slike/TeddyRiner.jpg" alt="Teddy Riner" style="float: left; width: 275px; height: 390px; margin-right: 5px;">
+		
+		<div style="min-height: 420px;">
+			<p>
+				Ukoliko ste se pitali da li u džudou postoji ličnost koja je toliko dominatna u svom sportu kao Ronaldo ili Messi u fudbalu ili Novak Đoković u tenisu, odgovor na vaše pitanje je definitivno francuski reprezentivac Tedi Riner (Teddy Riner). On je visok preko 2 metra i težak 130kg, u džudou se takmiči u kategoriji +100kg. U svojoj karijeri osvojio je 8 zlatnih svetskih medalja, što ga čini prvim i jedinim u svetu džudoa. Takođe, osvojio je 2 zlatne medalje na Olimpijskim igrama i 5 zlatnih medalja na Evropskom prvenstvu. Takmiči se za francuski džudo klub <i>Paris Saint-Germain</i>. Njegovi nadimci su "Teddy Bear" ili "Big Ted"
+			</p>
+			
+			<p>
+				Riner je uzor gotovo svim džudistima, kako deci, tako i velikim šampionima. Svaki borac teži ka njegovom uspehu, mnogi žele da prestignu ovu legendu koju džudo sport ima. Riner je čak 10 godina bio neporažen, ostvario je niz od 154 pobeđenih mečeva. Njegov niz pobeda prekinut je u borbi protiv japanca Kaguera Kokoroa u Parizu. Poraz koji je doživeo nakon 10 godina nije umanjio njegovu veličinu, Tedi je i dalje veoma cenjen i poštovan. Japan je najveća judo sila na svetu, očekivalo se da samo Japanac može poraziti ovog večnog šampiona.
+			</p>
+			
+			
+			
+		</div>
+		<div id="slideShowBox">
+		
+			<div id="prikaz">
+				<img src="Slike/1.jpg">
+			</div>
+
+			<button onclick="prethSlika()"></button>
+			<button class="sled" onclick="sledSlika()"></button>
+			
+		</div>
+		
+		
+		<table style="width: 45%; height: 510px;">
+			<tr>
+				<th colspan="2">Dostignuća</th>
+			</tr>
+			<!--Olimpijske igre-->
+			<tr>
+				<th rowspan="3">Olimpijske igre</th>
+				<td>2012 London <b>Zlato</b></td>
+			</tr>
+			<tr>
+				<td>2016 Rio de Janeiro <b>Zlato</b></td>
+			</tr>
+			<tr>
+				<td>2009 Rotterdam <b>Bronza</b></td>
+			</tr>
+			<!--Svetsko prvenstvo-->
+			<tr>
+				<th rowspan="8">Svetsko prvenstvo</th>
+				<td>2007 Rio de Janeiro<b>Zlato</b></td>
+			</tr>
+			<tr>
+				<td>2009 Rotterdam <b>Zlato</b></td>
+			</tr>
+			<tr>
+				<td>2010 Tokyo <b>Zlato</b></td>
+			</tr>
+			<tr>
+				<td>2011 Paris <b>Zlato</b></td>
+			</tr>
+			<tr>
+				<td>2013 Rio de Janeiro <b>Zlato</b></td>
+			</tr>
+			<tr>
+				<td>2014 Chelyabinsk <b>Zlato</b></td>
+			</tr>
+			<tr>
+				<td>2015 Astana<b>Zlato</b></td>
+			</tr>
+			<tr>
+				<td>2017 Budapest<b>Zlato</b></td>
+			</tr>
+			<!--Svetsko prvenstvo u  teskoj kategoriji-->
+			<tr>
+				<th rowspan="3">Svetsko prvenstvo u teškoj kategoriji</th>
+				<td>2008 Levallois-Perret <b>Zlato</b></td>
+			</tr>
+			<tr>
+				<td>2010 Tokyo <b>Srebro</b></td>
+			</tr>
+			<tr>
+				<td>2017 Marrakech <b>Zlato</b></td>
+			</tr>
+			<!--Evropsko prvenstvo-->
+			<tr>
+				<th rowspan="5">Evropsko prvenstvo</th>
+				<td>2007 Belgrade <b>Zlato</b></td>
+			</tr>
+			<tr>
+				<td>2011 Istanbul <b>Srebro</b></td>
+			</tr>
+			<tr>
+				<td>2013 Budapest <b>Zlato</b></td>
+			</tr>
+			<tr>
+				<td>2014 Montpellier <b>Zlato</b></td>
+			</tr>
+			<tr>
+				<td>2016 Kazan <b>Zlato</b></td>
+			</tr>
+			<!--Svetsko prvenstvo u  teskoj kategoriji-->
+			<tr>
+				<th>Mediteranske igre</th>
+				<td>2009 Pescara <b>Zlato</b></td>
+			</tr>
+		</table>
+		
+		<p>
+			Tedi je izvanrendan sportista koji je svoj talenat uz mnogo rada i truda doveo gotovo do savršenstva. Za više informacija o njegovoj karijeri možete pogledati <a href="https://en.wikipedia.org/wiki/Teddy_Riner">ovde</a>. A sad pogledajte kompilaciju Tedijevih čuvenih mečeva.
+		</p>
+		
+		<video id="centriraj" style="margin-bottom: 24px;" controls>
+			<source src="Video/TeddyRiner.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		
+	</div>
+	
+	
+	<script type="text/javascript">
+
+			var slikaSadrzaj = document.getElementById('prikaz');
+
+			// sadrzaj slike predstavljen u nizu
+			var slika = ['1','2', '3', '4'];
+
+			var i = slika.length;
+
+
+			// funkcija za prebacivanje na sledecu sliku
+
+			function sledSlika() {
+				if (i < slika.length) {
+					i = i+1;
+				} else {
+					i = 1;
+				}
+				  slikaSadrzaj.innerHTML = "<img src=Slike/" + slika[i-1] + ".jpg>";
+			}
+
+
+			// funkcija za prethodnu sliku
+
+			function prethSlika() {
+
+				if (i < slika.length + 1 && i > 1) {
+					i= i - 1;
+				} else {
+					i = slika.length;
+				}
+				  slikaSadrzaj.innerHTML = "<img src=Slike/" + slika[i-1]+".jpg>";
+
+			}
+
+		  
+		  // za automatsko prebacivanje slika
+
+		  setInterval(sledSlika , 8000);
+
+		</script>
+	
+</body>

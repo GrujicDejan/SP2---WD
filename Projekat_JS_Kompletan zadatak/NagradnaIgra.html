@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="utf-8">
+	<title="Početna strana">
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<script src="js/script.js"></script>
+</head>
+
+<body onload="inicijalizuj(), animacija2(), animacija()">
+	<header>
+		<div class="navigacija">
+			<h1>Judo</h1>
+			<a href="Pocetna.html"><div>Početna strana</div></a>
+			<a href="Uvod.html"><div>Uvod</div></a>
+			<a href="Istorija.html"><div>Istorija džuda</div></a>
+			<a href="SrpskiJudo.html"><div>Srpski džudo</div></a>
+			<a href="Turniri.html"><div>Turniri</div></a>
+			<a href="NajtrofejnijiBorac.html"><div>Najtrofejniji borac</div></a>
+			<a href="NagradnaIgra.html"><div>Nagradna igra</div></a>
+		</div>
+	</header>
+	
+	<div style="max-width: 1500px;" class="body-content">
+		
+		<div class="cover">
+		
+			<u><h1>Nagradna igra</h1></u>
+		
+		</div>
+		
+		<h2 style="text-align: center;">Učestvuj u nagradnoj igri</h2>
+		
+		<form id="pozadina" name="forma" action="Zahvalnica.html" onsubmit="return provera()">
+		
+			<fieldset>
+				<legend>Podaci o korisniku</legend>
+				<div class="forma-izgled">
+					<label>Pol</label>
+					<div><input type="radio" name="pol" value="m">M</div>
+					<div><input type="radio" name="pol" value="z">Ž</div>
+				</div>
+				
+				<div class="forma-izgled">
+					<label>Ime i prezime:</label>
+					<input type="text" placeholder="Unesite ime i prezime" id="imeprezime" size="40" required>
+				</div>
+				
+				<div class="forma-izgled">
+					<label>Datum rođenja:</label>
+					<input type="date" placeholder="dd.mm.gggg." id="datum"  min="1940-01-01" max="2020-01-06" required>
+				</div>
+				
+				<div class="forma-izgled">
+					<label>E-Mail:</label>
+					<input type="text" placeholder="Unesite e-mail" id="email" required>
+				</div>
+				
+				<div class="forma-izgled">
+					<label>Telefon:</label>
+					<input type="text" placeholder="Unesite broj telefona" id="telefon" required>
+				</div>
+				
+				<div class="forma-izgled">
+					<label>Šta biste želeli da osvojite?</label>
+					<select id="nagrada" required>
+						<option value="">-</option>
+						<option value="kimono">Kimono</option>
+						<option value="putovanje">Putovanje u Japan</option>
+					</select>
+				</div>
+				
+			</fieldset>
+			<div style="margin-top: 15px;">
+				<input type="submit" value="Pošalji podatke" onclick="provera()" action="Zahvalnica.html">
+				<input type="reset" onclick="resetFunc()" value="Poništi popunjavanje forme">
+				<input type="button" onclick="darkMode()" value="Dark Mode">
+				<input type="button" onclick="normallMode()" value="Normal Mode">
+			</div>
+		</form>
+
+		<div id="judoka"></div>
+		<div id="judoka2"></div>
+	
+	</div>
+	
+</body>
