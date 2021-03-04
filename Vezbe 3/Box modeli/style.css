@@ -1,0 +1,67 @@
+/*Box model
+
+Box model definiše “omotač” oko svakog HTML elementa koji se sastoji iz sledećih stvari: paddinga, bordera i margine.
+
+- Content predstavlja sadržaj samog HTML elementa.
+- Paddingom se definiše razmak između contenta i bordera. Padding nije vidljiv – predstavlja običan prazan prostor.
+- Borderom se definiše linija koja ide oko contenta i paddinga.
+- Margina služi za definisanje razmaka između elementa i njegove okoline. Kao i padding, ni margina nije vidljiva.
+
+npr.
+  margin-top: 25px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+  
+  ili skraceno:
+  margin: 25px 150px 100px 80px;
+  
+npr. margin: 25px; - sve 4 margine su 25px
+
+Napomena: 
+Kad se računa ukupna visina i širina nekog elementa mora se dodati i velicina paddinga, okvira i margina.
+
+npr.
+  width: 120px;
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0;
+  
+  120px
+  +20px (levi i desni padding po 10px)
+  +10px (levi i desni okvir po 5px)
+  +0px (leva i desna margina po 0px)
+----------
+ukupno 150px širine
+
+Više o box modelu pogledati na:
+https://www.w3schools.com/css/css_boxmodel.asp
+https://www.w3schools.com/css/css_margin.asp
+
+
+*/
+
+/* div element ima gornju i donju marginu 20px, a leva i desna su 0, tj. div je udaljen od gore i dole 20px od elemenata iznad i ispod, a levo i desno su slepljeni  */
+div {
+	margin: 20px 0px;
+}
+
+/* span unutar elementa sa id prvi ima pozadinu zute boje, padding na sve 4 strane 10px (udaljenost teksta od okvira je svuda 10px)), dok su mu margine 5px (udaljenost elementa od drugih elemenata 5px))*/
+#prvi span {
+	background-color: yellow;
+	padding: 10px;
+	margin: 5px;
+}
+/* span unutar elementa sa id drugi ima pozadinu crvene boje, padding  gore i dole 3px, a sa strane 10px (udaljenost teksta od okvira gore dole je 3px, a sa strane 10px)), dok su mu margine gore i dole su 0px, a sa strane 5px */
+#drugi span {
+	background-color: red;
+	padding: 3px 10px;
+	margin: 0px 5px;
+}
+
+/* span unutar elementa sa id treci ima pozadinu zelene boje, paddinga gore 0px, desno 10px, dole 20px, a levo 30px (udaljenost teksta od okvira gore je 0px, desno 10px, dole 20px, a levo 30px)), dok su mu margine gore 50px, desno 0px, dole 10px, a sa leve strane 60px, tj. elemnta i drugog elementa od gore je  50px, desno 0px, dole 10px, a sa leve strane 60px*/
+#treci span {
+	background-color: green;
+	padding: 0px 10px 20px 30px;
+	margin: 50px 0px 10px 60px;
+}
