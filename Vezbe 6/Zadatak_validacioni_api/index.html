@@ -1,0 +1,114 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Onlajn kupovina</title>
+	<script src="js/script.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<style>
+		h1 {
+			text-align: center;
+			margin: 25px;
+		}
+
+		.error-messages {
+			color: red;
+		}
+
+		.form-subgroup {
+			display: inline-block;
+		}
+
+		.form-subgroup:not(:first-child) {
+			margin-left: 20px
+		}
+
+		.shop-items {
+			text-align: center;
+		}
+
+		.shop-item {
+			text-align: center;
+			display: inline-block;
+		}
+
+		.shop-item img {
+			display: block;
+		}
+	</style>
+</head>
+<body onload="initialize()">
+	<div class="container">
+		<h1>Onlajn kupovina</h1>
+		<form name="forma" onsubmit="return validate();">
+			<div class="form-group shop-items">
+				<div class="shop-item">
+					<img src="images/haljina1.jpg">
+					<p>4800,00</p>
+					<input type="checkbox" name="item1" id="item1">
+				</div>
+
+				<div class="shop-item">
+					<img src="images/haljina2.jpg">
+					<p>3200,00</p>
+					<input type="checkbox" name="item2" id="item2">
+				</div>
+
+				<div class="shop-item">
+					<img src="images/haljina3.jpg">
+					<p>4500,00</p>
+					<input type="checkbox" name="item3" id="item3">
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="name">Ime i prezime:</label>
+				<input type="text" class="form-control" id="name" name="name" required>
+			</div>
+
+			<div class="form-group">
+				<div class="form-subgroup" style="width: calc(100% - 100px);">
+					<label for="street">Ulica:</label>
+					<input type="text" class="form-control" id="street" name="street" required>
+				</div><div class="form-subgroup" style="width: 80px;">
+					<label for="street-num">Broj:</label>
+					<input type="number" class="form-control" id="street-num" name="street-num" min="1" required>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<div class="form-subgroup" style="width: 150px">
+					<label for="zip">Poštanski broj:</label>
+					<input type="text" class="form-control" id="zip" name="zip" required pattern="[0-9]{5}">
+				</div>
+
+				<div class="form-subgroup" style="width: calc(100% - 450px)">
+					<label for="city">Grad:</label>
+					<input type="text" class="form-control" id="city" name="city" required>
+				</div>
+
+				<div class="form-subgroup" style="width: 250px">
+					<label for="city">Država:</label>
+					<select class="form-control" id="country" name="country" required>
+						<option value="">-</option>
+						<option value="srb">Srbija</option>
+						<option value="bih">Bosna i Hercegovina</option>
+						<option value="cg">Crna Gora</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="zip">Dodatna napomena:</label>
+				<textarea class="form-control" id="comment" name="comment" maxlength="200"></textarea>
+			</div>
+
+			<div class="error-messages" id="error-messages"></div>
+
+			<div class="form-group" style="text-align: center; margin-top: 30px">
+				<input type="submit" class="btn btn-default" value="Pošalji porudžbinu">
+				<input type="reset" class="btn btn-default" value="Resetuj">
+			</div>
+		</form>
+	</div>
+</body>
+</html>
