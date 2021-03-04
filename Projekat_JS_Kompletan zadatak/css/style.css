@@ -1,0 +1,181 @@
+body {
+	font-family: Times New Roman, Times, sans-serif;
+}
+
+table {
+	border: 3px solid blue; 
+	width: 100%;
+}
+
+th, td {
+	border: 1px blue solid;
+	color: purple;
+	font-weight: bold;
+}
+
+tr {
+	text-align: center;
+}
+
+img {
+	border: 5px solid rgb(137,98,117);
+	border-radius: 4px;
+}
+
+video {
+	width: 600px;
+	height: 400px;
+}
+
+#kodokan-frame {
+	width: 25%;
+	border: solid 5px rgb(137,98,117);
+	border-width: 5px;
+	border-color: rgb(137, 98, 117);
+	position: fixed;
+	right: 40px;
+	top: 420px;
+	height: -webkit-calc(100% - 450px);
+	overflow:auto
+}
+
+#centriraj {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+span.slika-text p {
+	position: absolute;
+	width: 80%;
+	left: 21%;
+	top: 20px;
+	size: auto;
+}
+
+span.slika-text img {
+	width: calc(20% - 10px);
+	margin-top: 30px;
+}
+
+.navigacija {
+	background-color: rgb(224,224,224);
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	z-index: 1;
+	width: 150px;
+}
+
+.navigacija a div {
+	display: block;
+	padding: 10px;
+	margin: 0px;
+	margin-bottom: 15px;
+	margin-left: 25px; /*150-80=70, sto znaci da sa obe strane mora biti pomeren za 30px, posto je padding 10, margin left stavljamo na 25px i za rezultat dobijamo div koji je centriran*/
+	background-color: rgb(193,193,193);
+	color: purple;
+	width: 80px;
+	text-align: center;
+	border-radius: 5px;
+}
+
+
+.navigacija a:hover div {
+	background-color: rgb(238,235,226);
+	color: red;
+	width: 100px;
+	height: 10px;
+	padding-bottom: 50px;
+	margin-left: 15px; /*da bi ostalo centrirano*/
+	font-weight: bold;
+	padding-top: 35px;
+	font-size: 15px;
+}
+
+.navigacija h1 {
+	padding: 10px;
+	color: purple;
+	text-align: center;
+	text-shadow:
+       10px 10px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+
+.body-content {
+	background-color: white;
+	position: absolute;
+	left: 180px;
+	right: 50px;
+	text-align: justify;
+}
+
+.body-content p {
+	font-size: 1.5em;
+}
+
+.body-content h1 {
+	text-align: center;
+	-webkit-text-fill-color: purple; 
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: black;
+	position: absolute; 
+	top: 30%; 
+	left: 1%; 
+	font-size: 3.5em;
+}
+
+.cover {
+	position: relative; 
+	z-index: 2;
+	width: 100%; 
+	background-image: url(../Slike/Cover.jpg); 
+	height: 400px;  
+	background-size: cover; 
+	background-position: center;
+	margin-bottom: 10px;
+}
+
+/*JAVASCRIPT deo*/
+
+.forma-izgled {
+	margin: 15px 0px;
+}
+
+form label {
+	font-weight: bold;
+}
+		
+form {
+	width: 50%;
+	position: relative;
+	left: 30%;
+}
+
+#judoka{
+	position: absolute;
+	background-image: url(../Slike/Judoka.png);
+	z-index: 0;
+	width: 260px;
+	height: 260px;
+}
+
+#judoka2{
+	position: absolute;
+	background-image: url(../Slike/Judoka.png);
+	z-index: 0;
+	width: 260px;
+	height: 260px;
+}
+
+.uvecaj {
+	width: 100%;
+	height: 100%;
+	border: 10px solid red;
+	border-radius: 15px;
+}
+
