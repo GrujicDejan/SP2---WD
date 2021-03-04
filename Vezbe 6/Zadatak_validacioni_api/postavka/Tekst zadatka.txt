@@ -1,0 +1,26 @@
+Potrebno je implementirati HTML5 validaciju forme. Prvi korak pri implementaciji je
+dodavanje HTML5 validacionih atributa za sledeće stavke:
+- Obavezna polja su: ime i prezime, ulica, broj, poštanski broj, grad i država.
+- Minimalna vrednost koju kućni broj može imati je 1.
+- Poštanski broj treba da zadovolji sledeći regularni izraz: [0-9]{5} (tj. treba da bude
+  sačinjen od pet cifara)
+- Dodatna napomena ne sme imati više od 200 karaktera.
+
+Potom je potrebno odraditi sledećih nekoliko koraka:
+- Potrebno je za svako polje forme napraviti po jednu funkciju koja prvo resetuje
+  custom validity poruku tog polja na prazan string, a onda, ukoliko je potrebno, postavlja
+  novu vrednost custom validity poruke.
+- Prethodno implementirane funkcije se okidaju na određene event-e. Kako bismo objasnili
+  kada se ove funkcije tačno okidaju, uzećemo za primer polje za unos imena i prezimena.
+  To polje (kao i sva ostala polja forme) ima svoju funkciju koja je implementirana u
+  prethodnom koraku. Nazovimo tu funkciju "checkName". Funkcija "checkName" treba da se okine
+  pri svakom korisničkom unosu u polje za ime i prezime, kao i pri detekciji nevalidnog
+  unosa imena i prezimena (koje se događa pri submit-ovanju forme ako korisnik nije dobro
+  uneo podatke za ovo polje). Sada je potrebno napraviti funkciju u kojoj će se na svako
+  polje forme postaviti event-i koji će realizovati opisano ponašanje. Ova nova funkcija
+  onda treba da se pozove nakon što se stranica učita.
+- Pri submit-ovanju forme potrebno je proveriti da li je korisnik odabrao bar jedan proizvod.
+  Ukoliko nije, potrebno je prikazati mu obaveštenje da je obavezno odabrati bar jedan
+  proizvod i potrebno je zadržati ga na tekućoj stranici. A ukoliko korisnik jeste odabrao
+  jedan ili više proizvoda, potrebno je izračunati ukupnu cenu kupovine i prikazati je
+  korisniku.
