@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Contact</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+
+<body>
+	<!-- linkovi -->
+	<header>
+		<p>Web Design</p>
+		<div class="navigacija">
+			<a href="Home.html">Home<a>
+			<a href="WebBrowser.html">WebBrowser<a>
+			<a href="HTML.html">HTML<a>
+			<a href="CSS.html">CSS<a>
+			<a href="JavaScript.html">JavaScript<a>
+			<a href="Contact.html">Contact<a>
+		</div>
+	</header>
+	
+	<form>
+		<fieldset>
+			<legend>Personal information</legend><br>			
+			Gender: <br>
+			<input type="radio" name="gender" checked> Male<br>
+			<input type="radio" name="gender"> Female<br>	
+			<p>Birthdate: <input type="date"></p>
+		</fieldset><br>
+		
+		<fieldset>
+			<legend>Impressions</legend><br>		
+			How much did you like the content of this website?
+			<select name="question1">
+				<option selected>I didn't like it</option>
+				<option>I don't have opinion</option>
+				<option>I really liked it</option>
+			</select>
+			<p>What background color is most suitable for this website? <input type="color" name="color" value="#9932CC"></p>
+			<p>How many times did you visit this website (approximately)? <input type="number" min="1" value="1">	
+		</fieldset><br>
+			
+		<fieldset>
+			<legend>Contact form</legend><br>
+			The purpose of contacting:<br>
+			<input type="checkbox" id="option1" name="option1" value="problem">
+			<label for="option1"> I want to report a problem</label><br>
+			<input type="checkbox" id="option2" name="option2" value="suggestion">
+			<label for="option2"> I want to make a suggestion</label><br>
+			<input type="checkbox" id="option3" name="option3" value="commend">
+			<label for="option3"> I want to commend this website</label><br><br>
+			Comment:<br>
+			<textarea name="komentari" rows="7" cols="100">Insert your comment here.</textarea>
+		</fieldset><br>
+		
+		<input type="submit" value="Posalji">
+		
+	</form>
+	
+	
+	
+</body>

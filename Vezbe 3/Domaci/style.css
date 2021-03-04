@@ -1,0 +1,58 @@
+body {
+	background-color: rgb(238,235,226);
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+table {
+	background-color: white;
+}
+
+mark {
+	background-color: rgb(224,191,198);
+}
+
+/
+iframe {
+	width: 50%;
+	border: solid 5px rgb(137,98,117);
+}
+
+header {
+	background-color: rgb(137,98,117);
+	color: rgb(238,235,226);
+}
+
+.navigacija {
+	display: block;
+	color: white;
+	background-color: rgb(224,191,198);
+	text-align: center;
+}
+
+.navigacija a {
+	display: block;
+}
+
+header a:hover {
+  color: black;
+  background-color: rgb(238,235,226);
+}
+
+div.content {
+	width: 50%;
+	text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
