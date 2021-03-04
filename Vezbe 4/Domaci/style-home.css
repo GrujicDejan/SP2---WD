@@ -1,0 +1,22 @@
+.welcome-content {
+	background-color: rgba(72,57,66,0.7);
+	height: 100px;
+	width: 700px;
+	position: fixed;
+	top: 50%;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+}
+
+.welcome-content .text {
+	color: rgb(238,235,226);
+	font-size: 2em;
+	text-align: center;
+	margin: 0px;
+	line-height: 2.8em;
+}
+
+body {
+	background-image: url(pattern.jpg);
+}

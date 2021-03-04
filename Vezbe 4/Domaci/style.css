@@ -1,0 +1,58 @@
+body {
+	background-color: rgb(238,235,226);
+	font-family: Tahoma, Geneva, sans-serif;
+	margin: 0;
+}
+
+table {
+	background-color: white;
+}
+
+mark {
+	background-color: rgb(224,191,198);
+}
+
+iframe {
+	width: 50%;
+	border: solid 5px rgb(137,98,117);
+	border-width: 5px;
+	border-color: rgb(137, 98, 117);
+	position: fixed;
+	right: 0px;
+	top: 120px;
+	height: 750px;
+}
+
+header {
+	background-color: rgb(137,98,117);
+	color: rgb(238,235,226);
+	position: fixed;
+	z-index: 1;
+	white-space: nowrap;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+}
+
+.navigacija div {
+	display: inline-block;
+	background-color: rgb(224,191,198);
+	text-align: center;
+	color: white;
+	padding: 10px 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+	width: 100px;
+}
+
+div.content {
+	width: 45%;
+	text-align: justify;
+}
+
+main {
+	padding-top: 130px;
+	margin-left: 8px;
+
+}
