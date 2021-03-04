@@ -1,0 +1,27 @@
+Potrebno je implementirati prikaz slika u centralnom kontejneru, kao i
+njihovo zumiranje i pomeranje levo-desno u okviru pomenutog kontejnera.
+Implementaciju realizovati u sledećim koracima:
+- Napraviti funckiju za inicijalizaciju koja će se izvršiti kada se
+  stranica učita. Ta funkcija treba da odradi sledeće stvari:
+  - U globalnu promenljivu mainImage staviti element koji ima id "slika".
+    Dalje u kodu, kad god vam treba ovaj element, koristiti pomenutu
+    promenljivu.
+  - U divu sa id-em "links" nalaze se linkovi koji vode ka slikama. U
+    svaki od tih linkova potrebno je dodati img element čiji src atribut
+    ima istu vrednost kao href atribut linka u koji se dodaje.
+  - Na svaki link iz diva sa id-em "links" dodati event handler na onclick
+    event. Event handler treba da bude nova funkcija koju ćete kreirati za
+    ovu svrhu.
+- Implementirati event handler koji se okida na klik na link tako da se
+  realizuje sledeće ponašanje. Naime, klikom na neki link, img elementu
+  id-a "slika" treba postaviti src atribut na vrednost koja je ista
+  vrednosti href atributa kliknutog linka. Pored toga, klikom na ovaj
+  link treba sprečiti defoltnu operaciju onclick event-a za link.
+- Implementirati zumiranje slike koja je prikazana u glavnom kontejneru.
+  Slika treba da se zumira klikom na dugme sa simbolom +, dok treba
+  da se odzumira klikom na dugme sa simbolom -. Zumiranje se vrši
+  postavljanjem CSS propertija transform.
+- Implementirati pomeranje slike koja je prikazana u glavnom kontejneru.
+  Slika treba da se pomeri ulevo klikom na dugme sa simbolom >, a udesno
+  klikom na dugme sa simbolom >. Pomeranje slike se vrši upotrebom CSS
+  pozicioniranja.
