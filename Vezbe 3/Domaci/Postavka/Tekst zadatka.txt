@@ -1,0 +1,35 @@
+Formatirati priložene HTML fajlove CSS-om tako da se dobiju stranice koje su predstavljene na datim slikama (1.png, 2.png, 3.png, 4.png, 5.png, 6.png). Ceo CSS kod treba smestiti u dva .css fajla: style.css i style-home.css koji treba da se smeste u folder css. U tekstu koji sledi je opisano šta ta dva fajla treba da sadrže.
+
+
+
+---- style.css ----
+
+Ovaj fajl je importovan od strane svake HTML stranice, te je zadužen za formatiranje celog sajta. Treba da sadrži sledeće stvari:
+	
+- Body treba da bude obojen u boju koja ima ove vrednosti RGB komponenti: R:238, G:235, B:226.
+	
+- Font body-ja treba da se podesi tako da se prvo pokuša sa fontom Tahoma, potom, ako on nije dostupan, da se pokuša sa Geneva, i na kraju sa sans-serif.
+	
+- Pozadinska boja svih tabela na sajtu treba da bude bela.
+	
+- Hajlajtovan (mark) tekst ne treba da bude žute boje (što je defolt), već boje R:224, G:191, B:198.
+	
+- iFrame koji sadrži w3schools link (nalazi se u HTML-ovima Zadatak_HTML.html, Zadatak_CSS.html i Zadatak_JavaScript.html) treba da zauzima pola raspoložive širine, i treba da ima border koji je širok 5 piksela, i koji ima boju: R:137, G:98, B:117.
+	
+- Formatirati zaglavlje (naslov i navigacija) onako kako je dato na slikama. Pozadinska boja iza teksta "Web Design" je R:137, G:98, B:117, dok je boja slova R:238, G:235, B:226. Pozadinska boja iza linkova navigacije je R:224, G:191, B:198, dok je boja slova bela. Tekst linkova navigacije treba da bude centriran. Kada se pređe mišem preko linka navigacije, pozadinska boja treba da postane R:238, G:235, B:226, a boja teksta crna.
+	
+- Div klase "content" treba da zauzima pola širine stranice, a tekst unutar njega treba da bude poravnat i po levoj i po desnoj ivici.
+	
+
+
+---- style-home.css ----
+Ovaj fajl formatira samo HTML stranicu Zadatak_Home.html. Treba da sadrži sledeće stvari:
+	
+- Formatirati stranicu kao na slici 1.png.
+	
+- Pozadinska slika koja se koristi nalazi se u folderu images, a zove se pattern.jpg.
+	
+- div u kom se nalazi tekst "Welcome!" treba da bude boje R:72, G:57, B:66 sa transparencijom od 0.7. On treba da bude širine 500 piksela i visine 50 piksela.
+	
+- Boja teksta "Welcome!" treba da bude R:238, G:235, B:226, a veličina 2em. Tekst treba da bude centriran.
+	
